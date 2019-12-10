@@ -22,13 +22,13 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
 
-func initializeAPI(*chi.Mux, *postgres.Db) {
+func initializeAPI() (*chi.Mux, *postgres.Db) {
 	// Create a new router
 	router := chi.NewRouter()
 
 	// Create a new connection to our pg database
 	db, err := postgres.New(
-		postgres.ConnString("localhost", 8081, "postgres", "go_graphql_db"),
+		postgres.ConnString("localhost", 8081, "postgres", "muggins1", "go_graph_db"),
 	)
 	if err != nil {
 		log.Fatal(err)
