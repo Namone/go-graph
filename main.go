@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/namone/go-graph/gql"
-	"github.com/namone/go-graph/postgres"
-	"github.com/namone/go-graph/server"
+	"github.com/Namone/go-graph/gql"
+	"github.com/Namone/go-graph/postgres"
+	"github.com/Namone/go-graph/server"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/render"
